@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=1920, initial-scale=1">
+  <title>Trampolim - Busca de vagas UX</title>
+  <link rel="stylesheet" href="busca-vagas-ux.css">
+</head>
+<body>
+  <div class="canvas">
+    <header class="topbar">
+      <div class="brand"><strong>SAO PAULO</strong><small>GOVERNO DO ESTADO</small></div>
+      <button class="area">Área do cidadão</button>
+      <div class="top-actions"><span>A-</span><span>A+</span><span>Acessibilidade</span><b>M</b></div>
+    </header>
+    <aside class="sidebar">
+      <section class="profile"><b>M</b><div><strong>Meu Nome</strong><small>Conta GOV.br</small></div></section>
+      <div class="search">Buscar no Trampolim</div>
+      <nav>
+        <a href="#">Início</a><a href="#">Agenda</a><a href="#">Cursos</a><a class="active" href="#">Vagas</a>
+        <small>Vagas publicadas</small><small>Candidaturas <em>1</em></small><small>Vagas recomendadas</small>
+        <a href="#">Currículo</a><a href="#">Favoritos</a>
+      </nav>
+      <div class="help"><strong>Precisa de ajuda?</strong><small>Acesse a central de suporte</small></div>
+      <div class="logo">trampolim</div>
+    </aside>
+    <main>
+      <div class="crumb">Para você <strong>› Buscar vagas</strong></div>
+      <section class="hero">
+        <div><span>BUSCA DE VAGAS</span><h1>Encontre uma vaga para você</h1><p>Procure oportunidades perto de casa e veja primeiro as vagas que combinam com seu currículo.</p></div>
+        <strong class="status">6 vagas encontradas</strong>
+      </section>
+      <section class="search-panel">
+        <label>Qual vaga você procura?<input type="text" value="Atendente"></label>
+        <label>Cidade, bairro ou CEP<input type="text" value="Osasco"></label>
+        <button class="primary">Buscar vagas</button><button class="ghost">Usar meu perfil</button>
+      </section>
+      <section class="quick-filter" aria-label="Filtros rápidos">
+        <button class="active">Perto de mim</button><button class="active">Compatível com meu currículo</button><button>Sem experiência</button><button>Presencial</button><button>Online</button><button>Meio período</button><button>Ensino médio</button>
+      </section>
+      <div class="content-grid">
+        <section class="results">
+          <header class="results-head">
+            <div><span>VAGAS RECOMENDADAS</span><h2>Escolha uma oportunidade</h2><p>As informações principais aparecem primeiro para facilitar sua decisão.</p></div>
+            <div class="result-actions"><button id="toggleFilters">Filtros simples</button><select aria-label="Ordenar vagas"><option>Mais compatíveis</option><option>Mais recentes</option><option>Maior salário</option></select></div>
+          </header>
+          <article class="job featured"><div class="job-top"><b>1</b><div><small>Vaga de emprego</small><h3>Atendente</h3><p>Empresa Tecnologia Cidadã</p></div><span class="match">Boa para você</span></div><div class="job-info"><span>Osasco</span><span>1 vaga</span><span>R$ 5.800,00</span><span>Presencial</span><span>Publicada em 21/08/2026</span></div><p class="desc">Atendimento ao cliente, organização de informações e apoio nas rotinas da empresa.</p><div class="tags"><span>Sem exclusividade</span><span>Integral</span><span>Médio completo</span><span>Perto de você</span></div><button>Ver detalhes</button></article>
+          <article class="job"><div class="job-top"><b>2</b><div><small>Vaga de emprego</small><h3>Enfermeira</h3><p>Cenário Qua 50 Menor EI</p></div><span class="soft">Falta CNH no currículo</span></div><div class="job-info"><span>Osasco</span><span>1 vaga</span><span>R$ 3.800,00</span><span>Presencial</span><span>Publicada em 31/08/2026</span></div><p class="desc">Atuação em ambulatório e atendimento de funcionários com sintomas.</p><div class="tags"><span>Integral</span><span>Presencial</span><span>Médio completo</span></div><button>Ver detalhes</button></article>
+          <article class="job"><div class="job-top"><b>3</b><div><small>Vaga de emprego</small><h3>Analista financeiro</h3><p>Cenário Qua 50 Menor EI</p></div><span class="match">Compatibilidade alta</span></div><div class="job-info"><span>Osasco</span><span>1 vaga</span><span>R$ 6.500,00</span><span>Online</span><span>Publicada em 21/08/2026</span></div><p class="desc">Análise financeira, contas a receber, contas a pagar e apoio ao controle de custos.</p><div class="tags"><span>Sem exclusividade</span><span>Integral</span><span>Superior completo</span></div><button>Ver detalhes</button></article>
+          <article class="job"><div class="job-top"><b>4</b><div><small>Vaga de emprego</small><h3>Motorista</h3><p>Cenário Qua 50 Menor EI</p></div><span class="neutral">Verifique os requisitos</span></div><div class="job-info"><span>Osasco</span><span>1 vaga</span><span>R$ 5.000,00</span><span>Presencial</span><span>Publicada em 31/08/2026</span></div><p class="desc">Transporte de pessoas ou materiais, seguindo rotas e horários definidos pela empresa.</p><div class="tags"><span>Integral</span><span>CNH obrigatória</span><span>Médio completo</span></div><button>Ver detalhes</button></article>
+        </section>
+        <aside class="filters" id="filtersPanel">
+          <div class="filters-head"><div><span>FILTROS</span><h2>Refine sua busca</h2></div><button id="clearFilters">Limpar</button></div>
+          <section class="smart"><div><strong>Filtro inteligente</strong><p>Mostra primeiro as vagas que combinam com os dados do seu currículo.</p></div><button class="toggle on" aria-label="Filtro inteligente ativo"></button></section>
+          <section class="filter-block"><h3>Local da vaga</h3><input type="text" value="Osasco"><a href="#">Não sei meu CEP</a><label class="range-label">Distância da vaga <strong>75 km</strong></label><div class="range"><i></i></div></section>
+          <section class="filter-block"><h3>Tipo de trabalho</h3><label><input type="checkbox" checked> Presencial</label><label><input type="checkbox"> Online</label><label><input type="checkbox"> Híbrido</label></section>
+          <section class="filter-block"><h3>Escolaridade pedida</h3><label><input type="checkbox" checked> Médio completo</label><label><input type="checkbox"> Superior incompleto</label><label><input type="checkbox"> Superior completo</label></section>
+          <section class="filter-block"><h3>Tipo de vaga</h3><label><input type="checkbox" checked> Sem exclusividade</label><label><input type="checkbox"> Exclusiva PcD</label><label><input type="checkbox"> Jovem Aprendiz</label><label><input type="checkbox"> Exclusiva 60+</label></section>
+          <section class="filter-block"><h3>Benefícios</h3><label><input type="checkbox"> Vale-transporte</label><label><input type="checkbox"> Vale-refeição</label><label><input type="checkbox"> Plano de saúde</label></section>
+          <section class="filter-block"><h3>Salário</h3><div class="salary"><input type="text" value="R$ 2.000"><input type="text" value="R$ 6.000"></div></section>
+          <button class="apply">Ver vagas</button>
+        </aside>
+      </div>
+    </main>
+  </div>
+  <script src="busca-vagas-ux.js"></script>
+</body>
+</html>
