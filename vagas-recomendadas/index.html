@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=1920, initial-scale=1">
+  <title>Trampolim - Vagas recomendadas UX</title>
+  <link rel="stylesheet" href="vagas-recomendadas-ux.css">
+</head>
+<body>
+  <div class="canvas">
+    <header class="topbar">
+      <div class="brand"><strong>SAO PAULO</strong><small>GOVERNO DO ESTADO</small></div>
+      <button class="area">Área do cidadão</button>
+      <div class="top-actions"><span>A-</span><span>A+</span><span>Acessibilidade</span><b>M</b></div>
+    </header>
+    <aside class="sidebar">
+      <section class="profile"><b>M</b><div><strong>Meu Nome</strong><small>Conta GOV.br</small></div></section>
+      <div class="search">Buscar no Trampolim</div>
+      <nav><a href="#">Início</a><a href="#">Agenda</a><a href="#">Cursos</a><a class="active" href="#">Vagas</a><small>Vagas publicadas</small><small>Candidaturas <em>1</em></small><small class="selected">Vagas recomendadas</small><a href="#">Currículo</a><a href="#">Favoritos</a></nav>
+      <div class="help"><strong>Precisa de ajuda?</strong><small>Acesse a central de suporte</small></div>
+      <div class="logo">trampolim</div>
+    </aside>
+    <main>
+      <div class="crumb">Para você <strong>› Vagas recomendadas</strong></div>
+      <section class="hero"><div><span>VAGAS RECOMENDADAS</span><h1>Vagas que combinam com você</h1><p>Veja primeiro as oportunidades que têm mais relação com seu currículo, localidade e preferências.</p></div><button>Atualizar recomendações</button></section>
+      <section class="summary"><article class="summary-main"><strong>7</strong><div><h2>vagas para você analisar</h2><p>Ordenadas pela chance de combinação com seu perfil.</p></div></article><article><strong>3</strong><span>com compatibilidade alta</span></article><article><strong>4</strong><span>perto de você</span></article><article class="warning"><strong>75%</strong><span>do currículo preenchido</span><i><b></b></i></article></section>
+      <section class="explain"><div><span>COMO ESCOLHEMOS</span><h2>Essas vagas aparecem porque combinam com seus dados</h2><p>O Trampolim compara sua formação, experiências, cidade, tipo de trabalho e informações do currículo com o que a vaga pede.</p></div><a href="#">Completar currículo</a></section>
+      <section class="filters-used"><div><strong>Filtros usados</strong><p>Toque no X para remover o que não quiser usar.</p></div><button>Produção Alimentícia ×</button><button>Ambiente e Saúde ×</button><button>Médio completo ×</button><button>Sem exclusividade ×</button><button>Presencial ×</button><button class="clear">Limpar filtros</button></section>
+      <div class="content-grid">
+        <section class="recommended-list">
+          <header class="list-head"><div><span>LISTA RECOMENDADA</span><h2>Escolha uma vaga para ver detalhes</h2></div><div class="head-actions"><button id="showGuide">Entender recomendações</button><select aria-label="Ordenar vagas"><option>Melhor para mim</option><option>Mais recentes</option><option>Maior salário</option></select></div></header>
+          <article class="job-card best"><div class="compat"><strong>94%</strong><span>compatível</span></div><div class="job-content"><div class="job-title"><b>1</b><div><small>Vaga recomendada</small><h3>Auxiliar de Limpeza</h3><p>Cenário Qua 50 Menor EI</p></div></div><div class="job-info"><span>Barueri</span><span>1 vaga</span><span>R$ 3.800,00</span><span>Presencial</span><span>Publicada em 01/09/2026</span></div><p class="desc">Realizar a limpeza da empresa e apoiar a organização dos espaços de trabalho.</p><div class="why"><span>Combina com sua escolaridade</span><span>Perto de você</span><span>Contratação integral</span></div></div><button>Ver detalhes</button></article>
+          <article class="job-card"><div class="compat"><strong>88%</strong><span>compatível</span></div><div class="job-content"><div class="job-title"><b>2</b><div><small>Vaga recomendada</small><h3>Enfermeira</h3><p>Cenário Qua 50 Menor EI</p></div></div><div class="job-info"><span>Osasco</span><span>1 vaga</span><span>R$ 3.800,00</span><span>Presencial</span><span>Publicada em 31/08/2026</span></div><p class="desc">Atendimento em ambulatório e apoio aos funcionários com sintomas.</p><div class="why"><span>Área de saúde</span><span>Presencial</span><span>Médio completo</span></div></div><button>Ver detalhes</button></article>
+          <article class="job-card alert"><div class="compat"><strong>72%</strong><span>verificar</span></div><div class="job-content"><div class="job-title"><b>3</b><div><small>Vaga recomendada</small><h3>Instrutor Motorista</h3><p>Teste</p></div></div><div class="job-info"><span>São Paulo</span><span>2 vagas</span><span>A combinar</span><span>Presencial</span><span>Publicada em 27/08/2026</span></div><p class="desc">Orientar motoristas, acompanhar rotinas de transporte e apoiar atividades operacionais.</p><div class="why"><span>Combina parcialmente</span><span>CNH pode ser necessária</span><span>Revise antes de se candidatar</span></div></div><button>Ver detalhes</button></article>
+          <article class="job-card"><div class="compat"><strong>81%</strong><span>compatível</span></div><div class="job-content"><div class="job-title"><b>4</b><div><small>Vaga recomendada</small><h3>Analista da Gauge</h3><p>Empresa 98284269597 SA</p></div></div><div class="job-info"><span>São Paulo</span><span>2 vagas</span><span>A combinar</span><span>Presencial</span><span>Publicada em 18/08/2026</span></div><p class="desc">Atuar com pesquisa operacional, análise de informações e apoio na organização de dados.</p><div class="why"><span>Sem exclusividade</span><span>Contratação integral</span><span>Perfil próximo</span></div></div><button>Ver detalhes</button></article>
+        </section>
+        <aside class="side-panel" id="guidePanel"><span>DICA SIMPLES</span><h2>Como escolher uma vaga?</h2><ol><li>Veja primeiro a porcentagem de compatibilidade.</li><li>Leia o motivo da recomendação.</li><li>Abra os detalhes antes de se candidatar.</li></ol><div class="complete"><strong>Melhore suas recomendações</strong><p>Quanto mais completo estiver seu currículo, melhores serão as vagas sugeridas.</p><button>Completar currículo</button></div></aside>
+      </div>
+    </main>
+  </div>
+  <script src="vagas-recomendadas-ux.js"></script>
+</body>
+</html>
